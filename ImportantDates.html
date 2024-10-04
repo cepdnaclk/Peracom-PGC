@@ -8,27 +8,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Peracom Postgraduate Colloquium - Contact Page</title>
+    <title>Peracom Postgraduate Colloquium - Call for Papers</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/slick.css" />
-    <link href="css/tooplate-little-fashion.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <link href="css/tooplate-little-fashion.css" rel="stylesheet">
     <style>
         /* General Styling */
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f5f5f5;
@@ -130,15 +126,20 @@
         .gallery-item img {
             width: 100%;
             height: 250px;
+            /* Fixed height for all images */
             object-fit: cover;
+            /* Ensures images fill the space without distortion */
             border-radius: 8px;
+            /* Rounded corners for a modern look */
             transition: transform 0.3s ease-in-out;
         }
 
         .gallery-item img:hover {
             transform: scale(1.05);
+            /* Zoom effect on hover for a more dynamic feel */
         }
 
+        /* Map styling */
         .map-container {
             margin-top: 40px;
         }
@@ -150,6 +151,7 @@
             border-radius: 8px;
         }
 
+        /* Adding padding between images */
         .mb-4 {
             padding: 10px;
         }
@@ -159,8 +161,43 @@
             padding: 20px;
             text-align: center;
             color: white;
-            margin-top: auto;
-            /* Pushes the footer to the bottom */
+        }
+
+        /* Event Overview Styling */
+        .important-dates ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+
+        .important-dates ul li {
+            margin-bottom: 10px;
+        }
+
+        .eligibility p {
+            font-size: 18px;
+            color: #2c3e50;
+        }
+
+        /* Section Styling */
+        .about h2 {
+            font-size: 32px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .about h3 {
+            font-size: 28px;
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+
+        .about p,
+        .about li {
+            font-size: 18px;
+            color: #2c3e50;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -173,7 +210,9 @@
         </div>
     </section>
 
-    <main class="flex-grow-1"> <!-- Add this class to make main flexible -->
+    <main>
+
+
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -190,37 +229,66 @@
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ImportantDates.html">Important Dates</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="callforPapers.html">Important Dates</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="submissionGuidelines.html">Submission
                                 Guidelines</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
+
                 </div>
             </div>
         </nav>
 
-        <!-- Contact Information Section -->
-        <section class="contact-info container my-5">
-            <!-- <h2 class="text-center">Contact Us</h2> -->
-            <!-- Header Section -->
-            <header class="site-header section-padding d-flex justify-content-center align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 col-12">
-                            <h1>
-                                Contact Us
-                            </h1>
-                        </div>
+        <header class="site-header section-padding d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 header-info">
+                        <h1>
+                            Important Dates
+                        </h1>
                     </div>
                 </div>
-            </header>
-            <p class="text-center">If you have any questions or need further clarification, please feel free to contact
-                us at:</p>
-            <p class="text-center"><strong>Email:</strong> <a
-                    href="mailto:shakthiperera231@gmail.com">shakthiperera231@gmail.com</a></p>
-        </section>
+            </div>
+        </header>
+
+
 
     </main>
+
+    <!-- Event Overview Section -->
+    <section class="about section-padding">
+        <div class="container">
+            <!-- <div class="row">
+            <div class="col-12 text-center">
+                <h2>Event Overview</h2>
+                <p>The Department of Computer Engineering warmly invites you to the 1st Annual Doctoral Colloquium. This event offers graduate researchers a platform to showcase their work in a constructive atmosphere, allowing them to gain insights and feedback from a diverse audience of peers and academics.</p>
+            </div>
+            <div class="col-12 text-center">
+                <h3>Theme: "Technology for Sustainability"</h3>
+                <p>This theme aligns with the various research areas and expertise within the Department of Computer Engineering.</p>
+            </div>
+        </div> -->
+            <div class="row important-dates">
+                <div class="col-12 text-center">
+                    <!-- <h3>Important Dates</h3> -->
+                    <ul>
+                        <li>Abstract Submission: <strong>13th October</strong></li>
+                        <li>Acceptance Notification: <strong>20th October</strong></li>
+                        <li>Camera-Ready Submission: <strong>27th October</strong></li>
+                        <li>Doctoral Colloquium: <strong>25th November</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="row eligibility">
+            <div class="col-12 text-center">
+                <h3>Eligibility</h3>
+                <p>All graduate researchers of the department are eligible and encouraged to submit to the postgraduate colloquium. We welcome research at all levels of progress and completion.</p>
+            </div>
+        </div> -->
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -238,6 +306,7 @@
     <script src="js/jQuery.headroom.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/custom.js"></script>
+
 </body>
 
 </html>
