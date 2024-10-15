@@ -192,6 +192,75 @@
             color: #2c3e50;
             line-height: 1.6;
         }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f5;
+            color: #2c3e50;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #e74c3c;
+        }
+
+        /* Keynote Speaker Section */
+        .keynote-speaker {
+            margin-top: 40px;
+        }
+
+        .speaker-card {
+            background-color: #eaf2f8;
+            border: 1px solid #7f8c8d;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .speaker-card h4 {
+            color: #e74c3c;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .speaker-card p {
+            font-size: 18px;
+            color: #2c3e50;
+            line-height: 1.5;
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            background-color: #d5d8dc;
+        }
+
+        /* Eligibility Section */
+        .eligibility p {
+            font-size: 18px;
+            color: #2c3e50;
+        }
+
+        /* Section Styling */
+        .about h2 {
+            font-size: 32px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .about h3 {
+            font-size: 28px;
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+
+        .about p,
+        .about li {
+            font-size: 18px;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
     </style>
 </head>
 
@@ -241,38 +310,49 @@
         </div>
     </section>
 
-<!-- Event Overview Section -->
-<section class="about section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2>Event Overview</h2>
-                <p>The Department of Computer Engineering warmly invites you to the 1st Annual Doctoral Colloquium. This event offers graduate researchers a platform to showcase their work in a constructive atmosphere, allowing them to gain insights and feedback from a diverse audience of peers and academics.</p>
+    <!-- Event Overview Section -->
+    <section class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Event Overview</h2>
+                    <p>The Department of Computer Engineering warmly invites you to the 1st Annual Doctoral Colloquium.
+                        This event offers graduate researchers a platform to showcase their work in a constructive
+                        atmosphere, allowing them to gain insights and feedback from a diverse audience of peers and
+                        academics.</p>
+                </div>
+                <div class="col-12 text-center">
+                    <h3>Theme: "Technology for Sustainability"</h3>
+                    <p>This theme aligns with the various research areas and expertise within the Department of Computer
+                        Engineering.</p>
+                </div>
             </div>
-            <div class="col-12 text-center">
-                <h3>Theme: "Technology for Sustainability"</h3>
-                <p>This theme aligns with the various research areas and expertise within the Department of Computer Engineering.</p>
+
+            <!-- Keynote Speaker Section -->
+            <div class="row keynote-speaker">
+                <div class="col-12 text-center">
+                    <h3>Keynote Speaker</h3>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="speaker-card">
+                        <h4>Vijaykrishnan Narayanan</h4>
+                        <p><strong>Associate Dean of Innovation, College of Engineering</strong></p>
+                        <p>Evan Pugh University Professor and Robert A. Noll Chair Professor of Computer Science and
+                            Engineering and Electrical Engineering, The Pennsylvania State University, University Park
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row eligibility">
+                <div class="col-12 text-center">
+                    <h3>Eligibility</h3>
+                    <p>All graduate researchers of the department are eligible and encouraged to submit to the
+                        postgraduate colloquium. We welcome research at all levels of progress and completion.</p>
+                </div>
             </div>
         </div>
-        <!-- <div class="row important-dates">
-            <div class="col-12 text-center">
-                <h3>Important Dates</h3>
-                <ul>
-                    <li>Abstract Submission: <strong>13th October</strong></li>
-                    <li>Acceptance Notification: <strong>20th October</strong></li>
-                    <li>Camera-Ready Submission: <strong>27th October</strong></li>
-                    <li>Doctoral Colloquium: <strong>25th November</strong></li>
-                </ul>
-            </div>
-        </div> -->
-        <div class="row eligibility">
-            <div class="col-12 text-center">
-                <h3>Eligibility</h3>
-                <p>All graduate researchers of the department are eligible and encouraged to submit to the postgraduate colloquium. We welcome research at all levels of progress and completion.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <section class="featured-product section-padding">
